@@ -46,12 +46,16 @@ footer {
 .button {
   padding: 0.5rem;
   color: inherit;
-  font-size: large;
   border-radius: 10px;
+  filter: invert(1);
+}
+
+.icon {
+  width: 30px;
 }
 
 .button:hover {
-  background-color: rgb(119, 119, 119);
+  background-color: rgb(209, 209, 209);
 }
 
 @media only screen and (min-width: 750px) {
@@ -94,4 +98,24 @@ footer {
   .button {
     font-size: xx-large;
   }
+}
+
+/* 404 page */
+
+.error {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.error h1 {
+  font-size: 60px;
+}
+
+.error a {
+  color: rgb(98, 128, 73);
+  text-decoration: none;
+}
+
+.error a:hover {
+  color: rgb(126, 125, 125);
 }
