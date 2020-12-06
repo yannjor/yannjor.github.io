@@ -1,102 +1,80 @@
 body {
   font-family: Roboto, sans-serif;
-  background-color: rgb(37, 37, 37);
+  background-color: rgb(27, 27, 27);
   color: white;
-  min-height: 100vh;
 }
 
 .container {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main {
+  margin-bottom: 3rem;
 }
 
 .info {
-  padding: 30px;
-}
-
-.info header {
-  font-size: 20px;
-  padding-bottom: 1rem;
+  padding: 1rem;
 }
 
 .info p {
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 .pic {
   display: block;
   margin: 0 auto;
-  border-radius: 15px;
-  width: 75%;
-  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  width: 300px;
 }
 
-footer {
-  border-top: 1px solid;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.footer {
+  border-top: 1.5px solid;
 }
 
-.buttons {
+.links {
   display: flex;
   justify-content: center;
-  gap: 3rem;
-  padding-top: 1rem;
+  gap: 1rem;
+  padding-top: 2rem;
 }
 
-.button {
-  padding: 0.5rem;
+.link {
+  padding: 1rem;
   color: inherit;
-  border-radius: 10px;
   filter: invert(1);
 }
 
 .icon {
-  width: 30px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 2rem;
 }
 
-.button:hover {
+.icon:hover {
   background-color: rgb(209, 209, 209);
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 992px) {
   .container {
-    width: 80%;
-    margin: 0 auto;
+    width: 900px;
   }
 
-  .info {
-    padding: 20px;
-  }
-
-  .pic {
-    width: 50%;
-    display: block;
-    margin: 0 auto;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+  .main {
+    margin: 7rem 0 10rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
   }
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1200px) {
   .container {
-    padding-top: 3rem;
-    padding-bottom: 10rem;
-    display: flex;
-    width: 1000px;
-    gap: 2rem;
+    width: 1150px;
   }
-
-  .info {
-    padding-left: 1rem;
-    width: 700px;
-  }
-
-  .pic {
-    width: 300px;
-  }
-
-  .button {
-    font-size: xx-large;
+  .main {
+    font-size: large;
+    gap: 3rem;
   }
 }
 
